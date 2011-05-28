@@ -1,0 +1,27 @@
+[user]
+    name = Max Ng
+    email = maxwindiff@gmail.com
+
+[alias]
+    st = status
+    ci = commit
+    co = checkout
+    di = diff
+    dif = diff
+
+    bb = branch -vv
+    bd = branch -d
+    bD = branch -D
+    bu = branch -u
+    up = "!f() { git fetch upstream; git rebase upstream/$1; }; f"
+    close = "!f() { git bd $1; git up $(git rev-parse --abbrev-ref HEAD); git push; git upall; }; f"
+    upall = remote update --prune
+    rewrite = "!f() { git rebase -i HEAD~$1; }; f"
+
+    man = help
+    head = log -1
+    staged = diff --cached
+    unstage = reset HEAD
+    gg = log --abbrev-commit --relative-date --pretty='format: %C(green)%h %C(yellow)%d %C(reset)%s %C(green)%an %C(blue)(%ar)%n' --graph
+    logg = log --name-status --graph
+    stat = log --stat
