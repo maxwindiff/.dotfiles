@@ -20,3 +20,5 @@ function rgp() { grep -nriI "$*" *; }
 function ffind() { find . -iname "*$**"; }
 
 export PATH="$PATH:~/bin"
+
+source ~/.dotfiles/autocomplete/swift-complete.bash
