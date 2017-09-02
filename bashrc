@@ -19,6 +19,6 @@ function gp() { git grep -niI "$*" .; }
 function rgp() { grep -nriI "$*" *; }
 function ffind() { find . -iname "*$**"; }
 
-export PATH="$PATH:~/bin"
+export PATH="$PATH:/Applications/MacVim.app/Contents/bin:~/bin"
 
 source ~/.dotfiles/autocomplete/swift-complete.bash

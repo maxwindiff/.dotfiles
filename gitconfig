@@ -9,7 +9,7 @@
     di = diff
     dif = diff
 
-    bb = branch -vv
+    b = branch -vv
     bd = branch -d
     bD = branch -D
     bu = branch -u

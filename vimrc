@@ -35,11 +35,7 @@ set wildignore=*.swp,*.bak,*.pyc,*.cla
 
 " Key mapping
 map <F1> :set hls!<CR>
-
-map <F2> :color default<CR>
-map <F3> :color morning<CR>
-map <F4> :color desert<CR>
-map <F5> :color slate<CR>
+set pastetoggle=<F2>
 
 map <F6> :set guifont=Monaco:h12<CR><C-W>=
 map <F7> :set guifont=Monaco:h13<CR><C-W>=
