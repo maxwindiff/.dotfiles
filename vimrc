@@ -21,10 +21,13 @@ set smartindent
 set ignorecase
 set smartcase
 set incsearch
-set nohls
+set hls
 
 set showmatch
 set matchtime=1
+
+set cursorline
+set cursorlineopt=screenline
 
 set autowrite
 set nobackup
@@ -46,6 +49,8 @@ map <C-H> :w<CR>
 noremap Q gq
 noremap j gj
 noremap k gk
+set display+=lastline
 
 syn on
 filetype plugin indent on
+color koehler

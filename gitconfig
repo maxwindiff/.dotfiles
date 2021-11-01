@@ -13,10 +13,6 @@
     bd = branch -d
     bD = branch -D
     bu = branch -u
-    up = "!f() { git fetch upstream; git rebase upstream/$1; }; f"
-    close = "!f() { git bd $1; git up $(git rev-parse --abbrev-ref HEAD); git push; git upall; }; f"
-    upall = remote update --prune
-    rewrite = "!f() { git rebase -i HEAD~$1; }; f"
 
     man = help
     head = log -1
@@ -25,3 +21,11 @@
     gg = log --abbrev-commit --relative-date --pretty='format: %C(green)%h %C(yellow)%d %C(reset)%s %C(green)%an %C(blue)(%ar)%n' --graph
     logg = log --name-status --graph
     stat = log --stat
+[core]
+	excludesfile = /Users/kichi/.gitignore_global
+[push]
+	default = current
+[fetch]
+	prune = true
+[init]
+	defaultBranch = main
