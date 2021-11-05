@@ -23,7 +23,7 @@ function gp() { git grep -niI "$*" .; }
 function rgp() { grep -nriI "$*" *; }
 function ffind() { find . -iname "*$**"; }
 
-export PATH="/usr/bin:$PATH:/Applications/MacVim.app/Contents/bin:$HOME/bin:$HOME/go/bin:$HOME/Library/Python/3.8/bin"
+export PATH="$PATH:/Applications/MacVim.app/Contents/bin:$HOME/bin"
 export bb=beaglebone.local
 
 alias http="python -m SimpleHTTPServer 1337"
