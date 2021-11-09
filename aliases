@@ -11,7 +11,7 @@ alias ll="ls -al"
 alias ltr="ls -ltr"
 
 alias venv="python3 -m venv"
-alias activate-venv=". .env/bin/activate"
+alias activate-venv=". .venv/bin/activate"
 
 alias trim-log="sed -i '' \
   -e '/^(Filename: /d' \
