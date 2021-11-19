@@ -29,7 +29,7 @@ alias trim-log="sed -i '' \
   -e '/^Material does/d' \
   -e '/^Failed to localize/d' \
   -e '/^ *$/d'"
-alias run-aggregator="PYTHONPATH=src/python python3 src/python/analysis/event_aggregator.py -u 1 -e MID_Premier_Draft"
+alias run-aggregator="PYTHONPATH=src/python python3 src/python/analysis/event_aggregator.py -u 1 -e VOW_Premier_Draft"
 
 function gp() { git grep -niI "$*" .; }
 function rgp() { grep -nriI "$*" *; }
