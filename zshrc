@@ -30,5 +30,5 @@ parse_git_branch() { git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/
 setopt PROMPT_SUBST
 export PS1=" %F{11}%*%f %F{14}%1~%f %F{11}\$(parse_git_branch)%f%# "
 export GREP_OPTIONS='--color=auto'
-export PATH="$PATH:$HOME/bin:/Applications/MacVim.app/Contents/bin"
+export PATH="$PATH:$HOME/bin:$HOME/bin/npm/bin:/Applications/MacVim.app/Contents/bin"
 source ~/.aliases
