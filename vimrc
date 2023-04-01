@@ -5,8 +5,8 @@ set noswapfile
 
 set title
 
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set backspace=indent,eol,start
 set shiftround
 set expandtab
@@ -27,7 +27,7 @@ set showmatch
 set matchtime=1
 
 set cursorline
-set cursorlineopt=screenline
+set cursorlineopt=number
 
 set autowrite
 set nobackup

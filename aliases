@@ -14,9 +14,12 @@ alias venv="python3 -m venv"
 alias activate-venv=". .venv/bin/activate"
 alias pluto="julia -t 4 -e 'using Pluto; Pluto.run(host=\"0.0.0.0\", require_secret_for_access=false)'"
 alias tf="terraform"
-alias jl=jl18
-alias jl17="OPENBLAS_NUM_THREADS=8 julia17 --project"
-alias jl18="OPENBLAS_NUM_THREADS=8 julia18 --project"
+alias mcjl="METAL_CAPTURE_ENABLED=1 jl"
+alias jl="jl18"
+alias jl17="julia17 --project"
+alias jl18="julia18 --project"
+alias jl19="julia19 --project"
+alias blaze=bazel
 
 alias trim-log="sed -i '' \
   -e '/^(Filename: /d' \
