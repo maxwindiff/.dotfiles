@@ -21,24 +21,6 @@ alias jl18="julia18 --project"
 alias jl19="julia19 --project"
 alias blaze=bazel
 
-alias trim-log="sed -i '' \
-  -e '/^(Filename: /d' \
-  -e '/^Parent of RectTransform/d' \
-  -e '/^PrintOnEnable:/d' \
-  -e '/^UnityEngine/d' \
-  -e '/^Wotc/d' \
-  -e '/^DG/d' \
-  -e '/^PAPA/d' \
-  -e '/^System/d' \
-  -e '/^EndDragCard/d' \
-  -e '/^When used with/d' \
-  -e '/^Please note that/d' \
-  -e '/^Updating model of/d' \
-  -e '/^Material does/d' \
-  -e '/^Failed to localize/d' \
-  -e '/^ *$/d'"
-alias run-aggregator="PYTHONPATH=src/python python3 src/python/analysis/event_aggregator.py -u 1 -e VOW_Premier_Draft"
-
 function gp() { git grep -niI "$*" .; }
 function rgp() { grep -nriI "$*" *; }
 function ffind() { find . -iname "*$**"; }
