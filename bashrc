@@ -11,3 +11,9 @@ export PS1=" $YELLOW\t$WHITE $CYAN\W$WHITE $YELLOW\$(parse_git_branch)$WHITE\$ "
 
 source ~/.aliases
 source "$HOME/.cargo/env"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/kichi/.cache/lm-studio/bin"
+# End of LM Studio CLI section
+
+. "$HOME/.cargo/env"

@@ -9,4 +9,9 @@ if [ -f '/Users/kichi/bin/google-cloud-sdk/path.bash.inc' ]; then . '/Users/kich
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/kichi/bin/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/kichi/bin/google-cloud-sdk/completion.bash.inc'; fi
-source "$HOME/.cargo/env"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/kichi/.cache/lm-studio/bin"
+# End of LM Studio CLI section
+
+. "$HOME/.cargo/env"

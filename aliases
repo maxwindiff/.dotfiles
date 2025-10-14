@@ -12,14 +12,7 @@ alias ltr="ls -ltr"
 
 alias venv="python3 -m venv"
 alias activate-venv=". .venv/bin/activate"
-alias pluto="julia -t 4 -e 'using Pluto; Pluto.run(host=\"0.0.0.0\", require_secret_for_access=false)'"
-alias tf="terraform"
-alias mcjl="METAL_CAPTURE_ENABLED=1 jl"
-alias jl="jl18"
-alias jl17="julia17 --project"
-alias jl18="julia18 --project"
-alias jl19="julia19 --project"
-alias blaze=bazel
+alias hs="export HISTSIZE=0"
 
 function gp() { git grep -niI "$*" .; }
 function rgp() { grep -nriI "$*" *; }
